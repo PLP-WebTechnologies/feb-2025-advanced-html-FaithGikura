@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 152, 0, 0.5);
+        }
+        h2 {
+            color: #ff9800;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #222;
+            color: #fff;
+        }
+        th, td {
+            border: 1px solid #ff9800;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ff9800;
+            color: black;
+        }
+        img, video, audio {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, select, button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        input, select {
+            background: #333;
+            color: white;
+        }
+        button {
+            background: #ff9800;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to Real Estate Hub
+    </header>
+    
+    <section>
+        <h2>Why Choose Us?</h2>
+        <ol type="I">
+            <li>Trusted by Thousands</li>
+            <li>Best Property Listings</li>
+            <li>Affordable Pricing</li>
+            <li>Verified Sellers</li>
+            <li>24/7 Customer Support</li>
+        </ol>
+    </section>
+    
+    <section>
+        <h2>Property Showcase</h2>
+        <img src="pic1.jpg" alt="Luxury Home" width="300px" height="400px">
+        <img src="pic2.jpg" alt="Luxury Home" width="300px" height="400px">
+    </section>
+    
+    <section>
+        <h2>Explore Our Services</h2>
+        <video controls>
+            <source src="vidaa.mp4" type="video/mp4">
+        </video>
+        
+    </section>
+    
+    <section>
+        <h2>Our Contact List</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <tr>
+                    <td>James Mwangi</td><td>123 Kenyatta Ave, Nairobi</td><td>+254712345678</td><td>james.mwangi@example.com</td>
+                </tr>
+            <tr>
+                <td>Faith Wanjiru</td><td>456 Moi Avenue, Mombasa</td><td>+254798765432</td><td>faith.wanjiru@example.com</td>
+            </tr>
+            <tr>
+                <td>Samuel Kiprotich</td><td>789 Eldoret Road, Eldoret</td><td>+254723456789</td><td>samuel.kiprotich@example.com</td>
+            </tr>
+            <tr>
+                <td>Beatrice Akinyi</td><td>147 Kisumu Street, Kisumu</td><td>+254734567890</td><td>beatrice.akinyi@example.com</td>
+            </tr>
+            <tr>
+                <td>David Njuguna</td><td>258 Thika Road, Thika</td><td>+254745678901</td><td>david.njuguna@example.com</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section>
+        <h2>Register with Us</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+            <br><br>
+            
+            <label for="property">Property Type:</label>
+            <select id="property" name="property" required>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="land">Land</option>
+            </select>
+            <br><br>
+            <label>Interested Services:</label>
+            <input type="checkbox" name="services" value="buying"> Buying
+            <input type="checkbox" name="services" value="selling"> Selling
+            <input type="checkbox" name="services" value="renting"> Renting
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
